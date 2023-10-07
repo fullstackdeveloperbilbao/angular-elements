@@ -1,0 +1,17 @@
+.product {
+  margin: 10px;
+  &-title {
+    text-align: center;
+  }
+  &-img {
+    display: inline-block;
+
+    border: solid black 1px;
+    & img {
+      width: 200px;
+    }
+  }
+  &-price {
+    margin-top: 20px;
+  }
+}

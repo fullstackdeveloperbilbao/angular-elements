@@ -1,0 +1,14 @@
+<div class="product">
+  <div
+    class="product-img"
+    matTooltip="{{ matTooltipComponentText }}"
+    matToolipTemplate
+    [templateGenerator]="createCustomElement.bind(this)"
+  >
+    <p class="product-title">Dog biscuits</p>
+    <img src="assets/img/biscuit.jpeg" />
+  </div>
+  <div class="product-price">
+    <p>Real time price: {{ price.asObservable() | async }} $</p>
+  </div>
+</div>

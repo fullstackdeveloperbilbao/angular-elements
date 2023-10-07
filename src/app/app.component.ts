@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
+import { ProductComponent } from './product/product.component';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  standalone: true,
+  imports: [CommonModule, ProductComponent],
 })
-export class AppComponent {
-  title = 'angular-elements';
-}
+export class AppComponent {}
