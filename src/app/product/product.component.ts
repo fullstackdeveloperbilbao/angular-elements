@@ -40,8 +40,6 @@ export class ProductComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit(): void {
-    this.createCustomElement();
-
     interval(1000)
       .pipe(
         tap(() => this.makeOffer()),
